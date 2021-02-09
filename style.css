@@ -167,6 +167,10 @@ header{
     border-spacing: 0 0.5rem;
 }
 
+#data-table tbody img{
+    cursor: pointer;
+}
+
 table thead tr th:first-child,
 table tbody tr td:first-child
 {

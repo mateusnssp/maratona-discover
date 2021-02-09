@@ -29,21 +29,21 @@
                     <spam>Entradas</spam>
                     <img src="./assets/income.svg" alt="">
                 </h3>
-                <p>R$ 5.000,00</p>
+                <p id="incomeDisplay">R$ 0,00</p>
             </div>
             <div class="card">
                 <h3>
                     <spam>Saídas</spam>
                     <img src="./assets/expense.svg" alt="">
                 </h3>
-                <p>R$ 2.000,00</p>
+                <p id="expenseDisplay">- R$ 0,00</p>
             </div>
             <div class="card total">
                 <h3>
                     <spam>Total</spam>
                     <img src="./assets/total.svg" alt="">
                 </h3>
-                <p>R$ 3.000,00</p>
+                <p id="totalDisplay">R$ 0,00</p>
             </div>
 
 
@@ -64,27 +64,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td class="description">Luz</td>
-                        <td class="expense">- R$ 500,00</td>
-                        <td class="date">23/01/2021</td>
-                        <td><img src="./assets/minus.svg" alt="Remover transação"></td>
-                    </tr>
-                    <tr>
-                        <td class="description">Criação de Website</td>
-                        <td class="income">R$ 5.000,00</td>
-                        <td class="date">23/01/2021</td>
-                        <td><img src="./assets/minus.svg" alt="Remover transação"></td>
-
-                    </tr>
-                    <tr>
-                        <td class="description">Internet</td>
-                        <td class="expense">- R$ 200,00</td>
-                        <td class="date">23/01/2021</td>
-                        <td><img src="./assets/minus.svg" alt="Remover transação"></td>
-
-                    </tr>
-
+                    <!--tbody-->
                 </tbody>
             </table>
         </section>
@@ -102,7 +82,7 @@
         <div class="modal">
             <div id="form">
                 <h2>Nova Transação</h2>
-                <form action="">
+                <form action="" onsubmit="Form.submit(event)">
                     <div class="input-group">
                         <label class="sr-only" for="description">Descrição</label>
                         <input type="text" name="description" id="description" placeholder="Descrição">
@@ -132,20 +112,7 @@
         </div>
     </div>
 
-    <script>
-        Modal = {
-            open(){
-                // Abrir modal.
-                // Adicionar a classe active ao modal.
-                document.querySelector('.modal-overlay').classList.add('active');
-            },
-            close(){
-                //Fechar Modal.
-                //Remover a classe active do modal.
-                document.querySelector('.modal-overlay').classList.remove('active');
-            }
-        }
-    </script>
+    <script src="./scripts.js"></script>
 </body>
 
 </html>
