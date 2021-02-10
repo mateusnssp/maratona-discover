@@ -8,4 +8,6 @@
 
 - [**notion-aula-2**](https://www.notion.so/Aula-02-d316a1fc8b5847298d8a06de78ad2124)
 
+- [**notion-aula-3**](https://www.notion.so/Aula-03-e2ce7bc52d544afe825caa01856205b8)
+
 
