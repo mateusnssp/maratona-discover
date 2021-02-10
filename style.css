@@ -53,6 +53,9 @@ a#spent{
 a#gain{
     color: var(--green);
 }
+a#clear{
+    color: var(--dark-blue);
+}
 
 a:hover{
     color: var(--light-green);
@@ -165,7 +168,7 @@ header{
 
 section#operations{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 3rem;
 }
 

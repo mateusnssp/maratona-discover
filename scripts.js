@@ -40,6 +40,14 @@ const Transaction = {
 
     },
 
+    clearAll(){
+        Transaction.all.forEach((index) => {
+            Transaction.all.splice(index, 1000000);
+            App.reload();
+        })
+        
+    },
+
     remove(index){
         Transaction.all.splice(index, 1);
         App.reload();
