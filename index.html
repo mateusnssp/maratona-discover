@@ -49,11 +49,18 @@
 
         </section>
 
+        <section id="operations">
+
+            <a id="gain" onclick="Modal.open(1)" href="#" class="button new">+ Nova Entrada</a>
+            <a id="spent" onclick="Modal.open(-1)" href="#" class="button new">- Nova Saída</a>
+
+            <!-- <a id="spent" onclick="Modal.open()" href="#" class="button new">Limpar Tudo</a> -->
+
+
+        </section>
+
         <section id="transaction">
             <h2 class="sr-only">Transações</h2>
-
-            <a onclick="Modal.open()" href="#" class="button new">+ Nova Transação</a>
-
             <table id="data-table">
                 <thead>
                     <tr>

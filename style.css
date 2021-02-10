@@ -47,6 +47,13 @@ a{
     text-decoration: none;
 }
 
+a#spent{
+    color: var(--red);
+}
+a#gain{
+    color: var(--green);
+}
+
 a:hover{
     color: var(--light-green);
 }
@@ -153,6 +160,15 @@ header{
     background: var(--green);
     color: #fff;
 }
+
+/*================================OPERATIONS====*/
+
+section#operations{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+}
+
 
 /*================================TABLE====*/
 #transaction{

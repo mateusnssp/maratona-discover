@@ -1,10 +1,19 @@
+
+let operation = 0; // número negativo para saídas; número positivo para entradas.
+
+
 const Modal = {
-    open(){
+    open(value){
         // Abrir modal.
         // Adicionar a classe active ao modal.
         document.querySelector('.modal-overlay').classList.add('active');
+        if(value > 0){
+            operation = 1;
+        }if(value < 0){
+            operation = -1;
+        }
     },
-    close(){
+    close(operation){
         //Fechar Modal.
         //Remover a classe active do modal.
         document.querySelector('.modal-overlay').classList.remove('active');
@@ -110,7 +119,11 @@ const Utils = {
     },
 
     formatAmount(value){
-        value = Number(value) * 100;
+        if(operation > 0){
+            value = Number(value) * 100;
+        }if(operation < 0){
+            value = -1 * (Number(value) * 100);
+        }
         return value;
     },
 
