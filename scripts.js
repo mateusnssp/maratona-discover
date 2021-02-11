@@ -94,13 +94,20 @@ const DOM = {
 
     innerHTMLTransaction(transaction, index) {
 
-        const CSSclass = transaction.amount > 0 ? "income" : "expense";
+        const CSSclassTable = transaction.amount > 0 ? "income" : "expense";
+
+        cardTotal = document.getElementById(`total`);
+        cardTotal.classList.remove(`positive`);
+        cardTotal.classList.remove(`negative`);
+        
+        cardTotal.classList.add(Transaction.total() >= 0 ? "positive" : "negative")
+
         const amount = Utils.formatCurrency(transaction.amount);
 
         const html = 
         `
         <td class="description">${transaction.description}</td>
-        <td class="${CSSclass}">${amount}</td>
+        <td class="${CSSclassTable}">${amount}</td>
         <td class="date">${transaction.date}</td>
         <td><img onclick="Transaction.remove(${index})" src="./assets/minus.svg" alt="Remover transação"></td>
         `
