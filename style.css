@@ -159,6 +159,11 @@ header{
     margin-top: 1rem;
 }
 
+.card.total{
+    background: var(--green);
+    color: #fff;
+}
+
 .card.total.positive{
     background: var(--green);
     color: #fff;
